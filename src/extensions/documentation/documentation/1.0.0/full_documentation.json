@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2026-08-26T11:15:36.873Z"
+    "x-generation-date": "2026-08-26T12:01:10.982Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -5658,7 +5658,9 @@
                     "title": {
                       "type": "string"
                     },
-                    "description": {},
+                    "description": {
+                      "type": "string"
+                    },
                     "instructor": {
                       "type": "object",
                       "properties": {
@@ -5705,7 +5707,9 @@
                               "video"
                             ]
                           },
-                          "text_content": {},
+                          "text_content": {
+                            "type": "string"
+                          },
                           "video_url": {
                             "type": "string"
                           },
@@ -6664,7 +6668,9 @@
               "title": {
                 "type": "string"
               },
-              "description": {},
+              "description": {
+                "type": "string"
+              },
               "instructor": {
                 "oneOf": [
                   {
@@ -6797,7 +6803,9 @@
           "title": {
             "type": "string"
           },
-          "description": {},
+          "description": {
+            "type": "string"
+          },
           "instructor": {
             "type": "object",
             "properties": {
@@ -7742,7 +7750,9 @@
                     "title": {
                       "type": "string"
                     },
-                    "description": {},
+                    "description": {
+                      "type": "string"
+                    },
                     "instructor": {
                       "type": "object",
                       "properties": {
@@ -7789,7 +7799,9 @@
                               "video"
                             ]
                           },
-                          "text_content": {},
+                          "text_content": {
+                            "type": "string"
+                          },
                           "video_url": {
                             "type": "string"
                           },
@@ -9864,7 +9876,9 @@
                     "title": {
                       "type": "string"
                     },
-                    "description": {},
+                    "description": {
+                      "type": "string"
+                    },
                     "instructor": {
                       "type": "object",
                       "properties": {
@@ -9911,7 +9925,9 @@
                               "video"
                             ]
                           },
-                          "text_content": {},
+                          "text_content": {
+                            "type": "string"
+                          },
                           "video_url": {
                             "type": "string"
                           },
@@ -10902,9 +10918,7 @@
           "data": {
             "required": [
               "title",
-              "type",
-              "text_content",
-              "video_url"
+              "type"
             ],
             "type": "object",
             "properties": {
@@ -10918,7 +10932,9 @@
                   "video"
                 ]
               },
-              "text_content": {},
+              "text_content": {
+                "type": "string"
+              },
               "video_url": {
                 "type": "string"
               },
@@ -11010,9 +11026,7 @@
         "type": "object",
         "required": [
           "title",
-          "type",
-          "text_content",
-          "video_url"
+          "type"
         ],
         "properties": {
           "id": {
@@ -11038,7 +11052,9 @@
               "video"
             ]
           },
-          "text_content": {},
+          "text_content": {
+            "type": "string"
+          },
           "video_url": {
             "type": "string"
           },
@@ -11064,7 +11080,9 @@
               "title": {
                 "type": "string"
               },
-              "description": {},
+              "description": {
+                "type": "string"
+              },
               "instructor": {
                 "type": "object",
                 "properties": {
@@ -12487,7 +12505,9 @@
                                   "video"
                                 ]
                               },
-                              "text_content": {},
+                              "text_content": {
+                                "type": "string"
+                              },
                               "video_url": {
                                 "type": "string"
                               },
@@ -13189,7 +13209,9 @@
               "title": {
                 "type": "string"
               },
-              "description": {},
+              "description": {
+                "type": "string"
+              },
               "instructor": {
                 "type": "object",
                 "properties": {
@@ -14612,7 +14634,9 @@
                                   "video"
                                 ]
                               },
-                              "text_content": {},
+                              "text_content": {
+                                "type": "string"
+                              },
                               "video_url": {
                                 "type": "string"
                               },
@@ -16178,7 +16202,9 @@
                     "title": {
                       "type": "string"
                     },
-                    "description": {},
+                    "description": {
+                      "type": "string"
+                    },
                     "instructor": {
                       "type": "object",
                       "properties": {
@@ -16225,7 +16251,9 @@
                               "video"
                             ]
                           },
-                          "text_content": {},
+                          "text_content": {
+                            "type": "string"
+                          },
                           "video_url": {
                             "type": "string"
                           },

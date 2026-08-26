@@ -24,12 +24,11 @@
       ]
     },
     "text_content": {
-      "type": "blocks",
-      "required": true
+      "type": "text"
     },
     "video_url": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "sequence_order": {
       "type": "integer"
