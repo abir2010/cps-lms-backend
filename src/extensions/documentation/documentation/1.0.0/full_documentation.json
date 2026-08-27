@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2026-08-27T14:11:07.856Z"
+    "x-generation-date": "2026-08-27T19:12:17.324Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -4602,7 +4602,9 @@
               "title": {
                 "type": "string"
               },
-              "body": {},
+              "body": {
+                "type": "string"
+              },
               "cover_image_url": {
                 "type": "string"
               },
@@ -4703,7 +4705,9 @@
           "title": {
             "type": "string"
           },
-          "body": {},
+          "body": {
+            "type": "string"
+          },
           "cover_image_url": {
             "type": "string"
           },
@@ -6347,7 +6351,9 @@
                     "title": {
                       "type": "string"
                     },
-                    "body": {},
+                    "body": {
+                      "type": "string"
+                    },
                     "cover_image_url": {
                       "type": "string"
                     },
@@ -8439,7 +8445,9 @@
                     "title": {
                       "type": "string"
                     },
-                    "body": {},
+                    "body": {
+                      "type": "string"
+                    },
                     "cover_image_url": {
                       "type": "string"
                     },
@@ -10565,7 +10573,9 @@
                     "title": {
                       "type": "string"
                     },
-                    "body": {},
+                    "body": {
+                      "type": "string"
+                    },
                     "cover_image_url": {
                       "type": "string"
                     },
@@ -12048,7 +12058,9 @@
                         "title": {
                           "type": "string"
                         },
-                        "body": {},
+                        "body": {
+                          "type": "string"
+                        },
                         "cover_image_url": {
                           "type": "string"
                         },
@@ -14177,7 +14189,9 @@
                         "title": {
                           "type": "string"
                         },
-                        "body": {},
+                        "body": {
+                          "type": "string"
+                        },
                         "cover_image_url": {
                           "type": "string"
                         },
@@ -16891,7 +16905,9 @@
                     "title": {
                       "type": "string"
                     },
-                    "body": {},
+                    "body": {
+                      "type": "string"
+                    },
                     "cover_image_url": {
                       "type": "string"
                     },

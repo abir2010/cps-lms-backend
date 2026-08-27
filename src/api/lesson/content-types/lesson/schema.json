@@ -18,10 +18,7 @@
     "type": {
       "type": "enumeration",
       "required": true,
-      "enum": [
-        "text",
-        "video"
-      ]
+      "enum": ["text", "video"]
     },
     "text_content": {
       "type": "text"

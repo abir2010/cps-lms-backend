@@ -16,7 +16,7 @@
       "required": true
     },
     "body": {
-      "type": "blocks",
+      "type": "text",
       "required": true
     },
     "cover_image_url": {
@@ -24,10 +24,7 @@
     },
     "status_type": {
       "type": "enumeration",
-      "enum": [
-        "draft",
-        "published"
-      ]
+      "enum": ["draft", "published"]
     },
     "author": {
       "type": "relation",
