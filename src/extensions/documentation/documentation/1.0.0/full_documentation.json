@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2026-08-27T21:27:56.807Z"
+    "x-generation-date": "2026-08-28T21:00:58.062Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -6048,6 +6048,15 @@
                                 "score": {
                                   "type": "integer"
                                 },
+                                "selected_answer": {
+                                  "type": "string",
+                                  "enum": [
+                                    "A",
+                                    "B",
+                                    "C",
+                                    "D"
+                                  ]
+                                },
                                 "student": {
                                   "type": "object",
                                   "properties": {
@@ -8141,6 +8150,15 @@
                                 },
                                 "score": {
                                   "type": "integer"
+                                },
+                                "selected_answer": {
+                                  "type": "string",
+                                  "enum": [
+                                    "A",
+                                    "B",
+                                    "C",
+                                    "D"
+                                  ]
                                 },
                                 "student": {
                                   "type": "object",
@@ -10270,6 +10288,15 @@
                                 "score": {
                                   "type": "integer"
                                 },
+                                "selected_answer": {
+                                  "type": "string",
+                                  "enum": [
+                                    "A",
+                                    "B",
+                                    "C",
+                                    "D"
+                                  ]
+                                },
                                 "student": {
                                   "type": "object",
                                   "properties": {
@@ -12184,6 +12211,15 @@
                         },
                         "score": {
                           "type": "integer"
+                        },
+                        "selected_answer": {
+                          "type": "string",
+                          "enum": [
+                            "A",
+                            "B",
+                            "C",
+                            "D"
+                          ]
                         },
                         "student": {
                           "type": "object",
@@ -14316,6 +14352,15 @@
                         "score": {
                           "type": "integer"
                         },
+                        "selected_answer": {
+                          "type": "string",
+                          "enum": [
+                            "A",
+                            "B",
+                            "C",
+                            "D"
+                          ]
+                        },
                         "student": {
                           "type": "object",
                           "properties": {
@@ -15170,10 +15215,22 @@
         ],
         "properties": {
           "data": {
+            "required": [
+              "selected_answer"
+            ],
             "type": "object",
             "properties": {
               "score": {
                 "type": "integer"
+              },
+              "selected_answer": {
+                "type": "string",
+                "enum": [
+                  "A",
+                  "B",
+                  "C",
+                  "D"
+                ]
               },
               "student": {
                 "oneOf": [
@@ -15255,6 +15312,9 @@
       },
       "QuizResult": {
         "type": "object",
+        "required": [
+          "selected_answer"
+        ],
         "properties": {
           "id": {
             "oneOf": [
@@ -15271,6 +15331,15 @@
           },
           "score": {
             "type": "integer"
+          },
+          "selected_answer": {
+            "type": "string",
+            "enum": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ]
           },
           "student": {
             "type": "object",
@@ -16601,6 +16670,15 @@
                                 },
                                 "score": {
                                   "type": "integer"
+                                },
+                                "selected_answer": {
+                                  "type": "string",
+                                  "enum": [
+                                    "A",
+                                    "B",
+                                    "C",
+                                    "D"
+                                  ]
                                 },
                                 "student": {
                                   "type": "object",

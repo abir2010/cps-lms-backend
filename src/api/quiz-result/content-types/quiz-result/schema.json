@@ -14,6 +14,11 @@
     "score": {
       "type": "integer"
     },
+    "selected_answer": {
+      "type": "enumeration",
+      "enum": ["A", "B", "C", "D"],
+      "required": true
+    },
     "student": {
       "type": "relation",
       "relation": "manyToOne",

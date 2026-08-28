@@ -614,6 +614,8 @@ export interface ApiQuizResultQuizResult extends Struct.CollectionTypeSchema {
     publishedAt: Schema.Attribute.DateTime;
     quiz: Schema.Attribute.Relation<'manyToOne', 'api::quiz.quiz'>;
     score: Schema.Attribute.Integer;
+    selected_answer: Schema.Attribute.Enumeration<['A', 'B', 'C', 'D']> &
+      Schema.Attribute.Required;
     student: Schema.Attribute.Relation<
       'manyToOne',
       'plugin::users-permissions.user'

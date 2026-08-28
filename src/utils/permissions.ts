@@ -43,8 +43,10 @@ export async function assertOwnerOrPrivileged(
   if (roleType && privilegedTypes.includes(roleType)) return;
 
   const segments = ownerPath.split(".");
+
   const entity = await strapi.documents(uid).findOne({
     documentId: entityId,
+    status: "published",
     populate: buildPopulate(segments) as any,
   });
 
@@ -56,4 +58,28 @@ export async function assertOwnerOrPrivileged(
       "You do not have permission to modify this resource.",
     );
   }
+}
+
+export async function resolveCourseInstructorId(
+  strapi: Core.Strapi,
+  courseRef: unknown,
+): Promise<number | undefined> {
+  const asString = String(courseRef);
+  let instructorId: unknown;
+
+  if (/^\d+$/.test(asString)) {
+    const course = await strapi.db
+      .query("api::course.course")
+      .findOne({ where: { id: asString }, populate: ["instructor"] });
+    instructorId = course?.instructor?.id;
+  } else {
+    const course = await strapi.documents("api::course.course").findOne({
+      documentId: asString,
+      status: "published",
+      populate: ["instructor"],
+    });
+    instructorId = course?.instructor?.id;
+  }
+
+  return instructorId === undefined ? undefined : Number(instructorId);
 }
